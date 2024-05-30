@@ -5,7 +5,7 @@ import logo from '../imagens/logo.png'
 const LoginForm = () => {
   return (
     <body>
-    <main className="d-flex h-100">
+    <main className="d  -flex h-100">
       <form className="formulario">
         <img src={logo} alt="Logotipo Real Clin" className="mobile-logo" />
         <h1>Entrar</h1>

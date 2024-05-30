@@ -7,8 +7,11 @@
 }
 
 .search-users {
-  background-color: #DDD7D7;
-}
+  background-color: #fff;
+  top: 0;
+  width: 70%;
+  border-radius: 1em;
+}   
 
 .search-icon {
   top: 20%;
@@ -18,7 +21,11 @@
 .table {
   width: 96% !important;
   align-self: center;
+  background-color: #fff;
+  border-radius: 1%;
 }
+
+ 
 
 #custom-btn {
   align-self: flex-end;
@@ -37,11 +44,20 @@
   }
 
   .search-users {
-    background-color: #DDD7D7;
+    background-color: #fff;
     position: absolute;
-    top: 0;
-    width: 100vw;
-  }
+    display: flex;
+    align-items: center;
+    top: 50px;
+    width: 50vw;
+    border-radius: 1em;
+  }   
+
+  
+.search-icon {
+  top: 20%;
+  right: 8px;
+}
 }
 
 @media(max-width: 768px) {

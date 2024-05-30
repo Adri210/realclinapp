@@ -8,6 +8,7 @@ import clipboard from '../imagens/clipboard.png';
 import users from '../imagens/users-solid.svg';
 import personCircle from '../imagens/perfil.png';
 import logo from '../imagens/logo.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,10 +27,10 @@ const Sidebar = () => {
             </a>
             <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
               <li className="w-100">
-                <a href="./Usuário.html" className="nav-link px-0 d-flex align-items-center gap-1">
+                <Link to="/Usuario" href="./Usuário.html" className="nav-link px-0 d-flex align-items-center gap-1">
                   <img src={person} />
                   <span className="d-none d-sm-inline text-dark">Usuário</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
