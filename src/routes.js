@@ -14,10 +14,10 @@ function RoutesApp() {
             
             <Routes>
                 <Route path="/" element={<LoginForm />} />
-                <Route path="/estagiario" element={<Estagiarios />} />
-                <Route path="/prontuarios" element={<Prontuario />} />
-                <Route path="/usuario" element={<Usuario />} />
-                <Route path="/agenda" element={<Agenda />} />
+                <Route path="/Estagiario" element={<Estagiarios />} />
+                <Route path="/Prontuario" element={<Prontuario />} />
+                <Route path="/Usuario" element={<Usuario />} />
+                <Route path="/Agenda" element={<Agenda />} />
             </Routes>
         </BrowserRouter>
     );

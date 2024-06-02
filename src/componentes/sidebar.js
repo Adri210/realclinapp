@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Sidebar = () => {
   return (
     <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white sidebar h-100">
@@ -22,35 +23,35 @@ const Sidebar = () => {
         <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
           <li>
             <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0">
-                <img src={vetor} className="fs-4 bi-speedometer2" />
+                <img src={vetor} className="fs-4 bi-speedometer2" alt='' />
               <span className="ms-1 d-none d-sm-inline text-dark">Inicio</span>
             </a>
             <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
               <li className="w-100">
-                <Link to="/Usuario" href="./Usuário.html" className="nav-link px-0 d-flex align-items-center gap-1">
-                  <img src={person} />
+                <Link to="/Usuario" className="nav-link px-0 d-flex align-items-center gap-1">
+                  <img src={person} alt=''/>
                   <span className="d-none d-sm-inline text-dark">Usuário</span>
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="./Agenda.html" className="nav-link px-0 align-middle">
-              <img src={calendar} className="fs-4 bi-table" />
+            <Link to='/Agenda' className="nav-link px-0 align-middle">
+              <img src={calendar} className="fs-4 bi-table" alt=''/>
               <span className="ms-1 d-none d-sm-inline text-dark">Agenda</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./Prontuario.html" className="nav-link px-0 align-middle">
-              <img src={clipboard} />
+            <Link to='./Prontuario' className="nav-link px-0 align-middle">
+              <img src={clipboard} alt=''/>
               <span className="ms-1 d-none d-sm-inline text-dark">Prontuários</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./Estagiarios.html" className="nav-link px-0 align-middle">
-              <img src={users} className="estagiarios-img" />
+            <Link to='/Estagiario' className="nav-link px-0 align-middle">
+              <img src={users} className="estagiarios-img" alt=''/>
               <span className="ms-1 d-none d-sm-inline text-dark">Estagiários</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <hr />

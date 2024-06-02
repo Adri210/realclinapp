@@ -1,17 +1,19 @@
 import React from 'react';
+import '../styles/index.css';
 import person from '../imagens/person-fill.png';
 import calendar from '../imagens/calendar-event-fill.png';
 import clipboard from '../imagens/clipboard.png';
 import users from '../imagens/users-solid.svg';
 import logo from '../imagens/logo.png';
-
-
-import '../styles/sidebar.css'; ; // Supondo que você tenha um arquivo de estilo para o cabeçalho
+import '../styles/sidebar.css'; 
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="bg-white mobile-header">
+    <div className="mobile-header">
+      
       <img src={logo} className="mobile-logo" alt="Logo" />
+      
       <nav>
         <input type="checkbox" id="menu-hamburguer" />
         <label htmlFor="menu-hamburguer">
@@ -21,28 +23,29 @@ const Header = () => {
         </label>
         <ul>
           <li>
-            <a href="./Usuário.html">
+            <Link to='/Usuario'>
               <img src={person} alt="Usuário" />
               Usuário
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./Agenda.html">
+            <Link to='/Agenda'>
               <img src={calendar} alt="Agenda" />
               Agenda
-            </a>
+            </Link>
+            
           </li>
           <li>
-            <a href="./Prontuario.html">
+            <Link to='Prontuario'>
               <img src={clipboard} alt="Prontuário" />
               Prontuário
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./Estagiarios.html">
+            <Link to='/Estagiarios'>
               <img src={users} className="estagiarios-img" alt="Estagiários" />
               Estagiários
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

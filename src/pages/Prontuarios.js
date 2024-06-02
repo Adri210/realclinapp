@@ -3,6 +3,7 @@ import Sidebar from '../componentes/sidebar';
 import Header from '../componentes/Header';
 import '../styles/index.css';
 import '../styles/estagiario.css';
+
 import Adicionar from './adicionar';
 
 const Prontuario = () => {

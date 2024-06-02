@@ -1,31 +1,25 @@
 .cadastro {
-  background-color: #DDD7D7;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: #DDD7D7 ;
+  width: 100% ;
+  height: 100vh ;
+  display: flex ;
+  flex-direction: column ;
 }
 
 .search-users {
-  background-color: #fff;
-  top: 0;
-  width: 70%;
-  border-radius: 1em;
-}   
+  background-color: #fff !important ;
+  
+}
 
 .search-icon {
-  top: 20%;
+  top: 20% ;
   right: 8px;
 }
 
 .table {
   width: 96% !important;
-  align-self: center;
-  background-color: #fff;
-  border-radius: 1%;
+  align-self: center !important;
 }
-
- 
 
 #custom-btn {
   align-self: flex-end;
@@ -37,27 +31,34 @@
   padding: 5px 10px;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1048px) {
   .cadastro {
     justify-content: center;
     position: relative;
   }
 
   .search-users {
-    background-color: #fff;
+    background-color: #DDD7D7;
     position: absolute;
-    display: flex;
-    align-items: center;
-    top: 50px;
-    width: 50vw;
-    border-radius: 1em;
-  }   
-
-  
-.search-icon {
-  top: 20%;
-  right: 8px;
+    top: 0;
+    border-radius: 3px;
+    width: 80vw;
+  }
 }
+
+@media(max-width: 1048px) and (min-width:756px) {
+  .cadastro {
+    justify-content: center;
+    position: relative;
+  }
+
+  .search-users {
+    background-color: #DDD7D7;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+    width: 80vw;
+  }
 }
 
 @media(max-width: 768px) {
@@ -66,15 +67,24 @@
   }
 }
 
+
 @media(max-width: 500px) {
   .cadastro {
     background-color: #fff;
   }
-
+  .search-users {
+    background-color: #DDD7D7;
+    top: 0;
+    border-radius: 3px;
+    width: 80vw;
+  } 
+  
   .table {
     width: 100% !important;
     font-size: 14px;
   }
+
+  
 }
 
 @media(max-width: 360px) {
