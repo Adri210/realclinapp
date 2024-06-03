@@ -37,6 +37,7 @@ const dias = [
 ];
 
 const CalendarDay = ({ day, events }) => {
+// Componente que representa um dia no calendário
   return (
     <div className="day d-flex flex-column justify-content-between">
       <span>{day}</span>
@@ -50,7 +51,7 @@ const CalendarDay = ({ day, events }) => {
 };
 
 const Agenda = () => {
-  const [mes, setMes] = useState('Abril de 2024');
+  const [mes, setMes] = useState('Abril de 2024'); // Estado para armazenar o mês atual
 
   return (
     <div className="container-fluid">
@@ -101,7 +102,7 @@ const Agenda = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   );
 };
 

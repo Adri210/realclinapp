@@ -36,13 +36,13 @@ const Header = () => {
             
           </li>
           <li>
-            <Link to='Prontuario'>
+            <Link to='/Prontuario'>
               <img src={clipboard} alt="Prontuário" />
               Prontuário
             </Link>
           </li>
           <li>
-            <Link to='/Estagiarios'>
+            <Link to='/Estagiario'>
               <img src={users} className="estagiarios-img" alt="Estagiários" />
               Estagiários
             </Link>

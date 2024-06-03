@@ -1,6 +1,6 @@
 .cadastro {
   background-color: #BDB8B8;
-  width: 100%;
+  width: 60%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@
 .cadastro-dois {
   background-color: #fff;
   border-radius: 10px;
-  width: 40rem;
+  width: 30rem;
   height: 40rem;
 }
 
@@ -101,12 +101,11 @@
     margin-top: 12rem;
   }
 
-  .custom-input {
-    display: none;
-  }
+  
 
   .search-icon {
-    right: -8px;
+    top: 20%;
+   right: 15px;
   }
 
   .custom-btn,

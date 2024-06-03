@@ -11,8 +11,8 @@ const LoginForm = () => {
       <form className="formulario">
         <img src={logo} alt="Logotipo Real Clin" className="mobile-logo" />
         <h1>Entrar</h1>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
+        <input type="email" placeholder="Email" className='input-login' />
+        <input type="password" placeholder="Senha" className='input-login' />
         <a href="#" className="link-dois">Esqueci minha senha</a>
         <Link to='/Usuario' className="botao-entrar">Entrar</Link>
         <div className="paragrafo">

@@ -42,7 +42,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to='./Prontuario' className="nav-link px-0 align-middle">
+            <Link to='/Prontuario' className="nav-link px-0 align-middle">
               <img src={clipboard} alt=''/>
               <span className="ms-1 d-none d-sm-inline text-dark">Prontuários</span>
             </Link>

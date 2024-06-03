@@ -41,7 +41,7 @@ h1 {
   font-size: 28px;
 }
 
-input {
+.input-login {
   font-size: 14px;
   border-radius: 6px;
   line-height: 5px;

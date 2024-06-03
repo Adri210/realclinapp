@@ -7,6 +7,9 @@
 .mobile-logo {
   height: 5rem !important;
   margin: 0;
+  position: relative;
+  left: 30%;
+  top: 10%;
 }
 
 .mobile-header nav ul {

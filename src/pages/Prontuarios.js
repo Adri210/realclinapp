@@ -7,15 +7,18 @@ import '../styles/estagiario.css';
 import Adicionar from './adicionar';
 
 const Prontuario = () => {
+  // Estado para armazenar a lista de prontuários
   const [prontuarios, setProntuarios] = useState([
     { nome: 'Maria', numero: '2545692', status: 'Ativo', data: '12 Jan. 2024' },
     { nome: 'Ana', numero: '1362589', status: 'Cancelado', data: '14 Out. 2022' },
     
   ]);
 
+    // Estado para controlar a exibição do formulário de adição
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
+    // useEffect que roda apenas uma vez, ao montar o componente, para carregar prontuários salvos no localStorage
     const storedProntuarios = localStorage.getItem('prontuarios');
     if (storedProntuarios) {
       setProntuarios(JSON.parse(storedProntuarios));
@@ -23,6 +26,7 @@ const Prontuario = () => {
   }, []);
 
   useEffect(() => {
+      // useEffect que roda sempre que a lista de prontuários muda, para salvar no localStorage
     localStorage.setItem('prontuarios', JSON.stringify(prontuarios));
   }, [prontuarios]);
 
